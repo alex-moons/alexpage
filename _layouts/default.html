@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    {{content}}
+    <button onclick="swtichMode()">Change Mode</button>
+
+    <script>
+        function swtichMode(){
+            const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (dark) {
+            document.documentElement.dataset.theme = "dark";
+            } else {
+            document.documentElement.dataset.theme = "light";
+            }
+        }
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+media.addEventListener("change", e => {
+  document.documentElement.dataset.theme = e.matches ? "dark" : "light";
+});
+    </script>
+</body>
+</html>

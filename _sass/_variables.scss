@@ -1,0 +1,33 @@
+$lg-offset: 3px;
+$color-selected:rgb(174, 173, 236);
+$color-outline: rgb(220,220,220);
+$color-box-shadow-inactive: rgb(178, 178, 178);
+$color-lg-label: rgb(106, 106, 106);
+
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --bg-color:#ffffff;
+    --text-color:#313131;
+    --primary-color: #de342b;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --bg-color:#3b3b3b;
+    --text-color:#cecece;
+    --primary-color: #b1312a;
+    }
+}
+// [data-theme="light-mode"]{
+//     --bg-color:#ffffff;
+//     --text-color:#313131;
+//     --primary-color: #de342b;
+// }
+
+// [data-theme="dark-mode"]{
+//     --bg-color:#3b3b3b;
+//     --text-color:#cecece;
+//     --primary-color: #b1312a;
+// }

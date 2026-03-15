@@ -1,23 +1,10 @@
 ---
 layout: post
-title:  "My first post using md"
-date:   2026-02-19 01:36:13 -0600
+title:  "Welcome to Jekyll!"
+date:   2026-02-19 00:58:13 -0600
 categories: jekyll update
-
-currumin: "I'm a bittch"
 ---
-
-
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-<h1>{{ "Hello World!" | downcase }} {{page.currumin}}</h1>
-
-{% if page.currumin %}
-  <h3>Hello</h3>
-  <script>
-    console.log("ge")
-  </script>
-{% endif %}
 
 Jekyll requires blog post files to be named according to the following format:
 

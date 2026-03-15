@@ -1,0 +1,43 @@
+button.style-lg{
+    border: solid 1px $color-outline;
+    border-radius: 50%;
+    padding:1rem 0.5rem;
+    color: $color-lg-label;
+    mix-blend-mode: color-burn;
+    background-color: rgb(225, 225, 225);
+    margin: $lg-offset;
+    box-shadow: $lg-offset $lg-offset 5px rgb(119, 119, 119), inset -2px -2px 2px rgb(255, 255, 255);
+
+    transition:
+        transform 30ms ease-out,
+        box-shadow 30ms ease-out,
+        background-color 30ms ease-out;
+        
+    &:active{
+        box-shadow: 1px 1px 3px $color-box-shadow-inactive;
+        background-color: rgb(242, 242, 242);
+        transform: translate($lg-offset,$lg-offset);
+    }
+    &:not(:active){
+        transition:
+            transform 30ms ease-in,
+            box-shadow 30ms ease-in,
+            background-color 30ms ease-in;
+    }
+
+    &:not(:active):hover{
+        box-shadow: 5px 5px 5px rgb(119, 119, 119), inset -1px -1px 2px $color-selected;
+        background-color: $color-outline;
+        filter: blur(0.3px);
+    }
+    &:not(:active):focus{
+        outline: solid 1px rgb(200, 196, 196);
+        box-shadow: 5px 5px 5px rgb(119, 119, 119), inset -1px -1px 4px $color-selected;
+    }
+
+    &:focus{
+        outline: solid 1px rgb(200, 196, 196);
+        box-shadow: 1px 1px 3px $color-box-shadow-inactive, inset -1px -1px 4px $color-selected;
+    }
+}
+
