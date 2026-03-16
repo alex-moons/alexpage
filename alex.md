@@ -1,9 +1,15 @@
 ---
-layout: page
+layout: firstlayout
 title: Alex
 permalink: /alex/
 ---
-## test
+## Site
+.time: {{ site.time }}
+
+.url: {{ site.url }}
+
+.url: {{ site.time | date_to_long_string }}
+
 
 
 ## todo empezó cuando nací

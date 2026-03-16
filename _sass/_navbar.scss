@@ -1,0 +1,39 @@
+.nav-parent{
+  display: flex;
+  background-color: var(--primary-color);
+}
+.main-nav{
+  display: flex;
+  flex-direction:row;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+.nav-button{
+  anchor-name: --nav-button;
+  position: absolute;
+  visibility: hidden;
+  padding:1rem 1rem 0 1rem;
+  background-color:transparent;
+  border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .nav-parent{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav{
+    flex-direction: column;
+    position: absolute;
+    position-anchor: --nav-button;
+    position-area: bottom center;
+  }
+  .main-nav.closed{
+    display: none;
+  }
+  .nav-button{
+    position: relative;
+    visibility: visible;
+  }
+}

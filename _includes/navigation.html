@@ -1,5 +1,10 @@
-<nav>
-  <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a>
-  <a href="/about" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>About</a>
-  <a href="/alex" {% if page.url == "/alex.html" %}style="color: red;"{% endif %}>Yo</a>
-</nav>
+<div class="nav-parent">
+  <button class="nav-button" onclick="document.getElementById('top-nav').classList.contains('closed')?document.getElementById('top-nav').classList.remove('closed'):document.getElementById('top-nav').classList.add('closed')">
+    =
+  </button>
+  <nav class="main-nav closed" id="top-nav">
+    <a href="/" {% if page.url == "/" %}style="color: var(--color-highlight);"{% endif %}>Home</a>
+    <a href="/about" {% if page.url == "/about/" %}style="color: var(--color-highlight);"{% endif %}>About</a>
+    <a href="/alex" {% if page.url == "/alex/" %}style="color: var(--color-highlight);"{% endif %}>Yo</a>
+  </nav>
+</div>

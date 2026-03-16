@@ -3,22 +3,19 @@ $color-selected:rgb(174, 173, 236);
 $color-outline: rgb(220,220,220);
 $color-box-shadow-inactive: rgb(178, 178, 178);
 $color-lg-label: rgb(106, 106, 106);
+$color-highlight: #dbb44a;
 
 
-@media (prefers-color-scheme: light) {
-  :root{
-    --bg-color:#ffffff;
-    --text-color:#313131;
-    --primary-color: #de342b;
+:root {
+  --bg-color:#ffffff;
+  --text-color:#313131;
+  --primary-color:#b15151;
 }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root{
-    --bg-color:#3b3b3b;
-    --text-color:#cecece;
-    --primary-color: #b1312a;
-    }
+:root[data-theme="dark"] {
+  --bg-color:#3b3b3b;
+  --text-color:#cecece;
+  --primary-color:#b15151;
 }
 // [data-theme="light-mode"]{
 //     --bg-color:#ffffff;

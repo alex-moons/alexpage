@@ -7,23 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    {% include navigation.html %}
     {{content}}
-    <button onclick="swtichMode()">Change Mode</button>
-
+    <button onclick="switchMode()">Change Mode</button>
     <script>
-        function swtichMode(){
-            const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            if (dark) {
-            document.documentElement.dataset.theme = "dark";
-            } else {
-            document.documentElement.dataset.theme = "light";
-            }
-        }
-        const media = window.matchMedia("(prefers-color-scheme: dark)");
+    function switchMode() {
+        const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+    }
 
-media.addEventListener("change", e => {
-  document.documentElement.dataset.theme = e.matches ? "dark" : "light";
-});
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    media.addEventListener("change", (e) => {
+        document.documentElement.dataset.theme = e.matches ? "dark" : "light";
+    });
     </script>
 </body>
 </html>
