@@ -1,30 +1,52 @@
+/* Color Variables */
 $lg-offset: 3px;
-$color-selected:rgb(174, 173, 236);
-$color-outline: rgb(220,220,220);
+$color-selected: rgb(174, 173, 236);
+$color-outline: rgb(220, 220, 220);
 $color-box-shadow-inactive: rgb(178, 178, 178);
 $color-lg-label: rgb(106, 106, 106);
 $color-highlight: #dbb44a;
 
-
+/* Theme Variables */
 :root {
-  --bg-color:#ffffff;
-  --text-color:#313131;
-  --primary-color:#b15151;
+  --bg-color: #ffffff;
+  --text-color: #313131;
+  --primary-color: #d17171;
+  --secondary-color: #dbb44a;
+  --accent-color: #6ba3d1;
+  --border-color: #e0e0e0;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+  --border-radius: 8px;
 }
 
 :root[data-theme="dark"] {
-  --bg-color:#3b3b3b;
-  --text-color:#cecece;
-  --primary-color:#b15151;
+  --bg-color: #2d2d2d;
+  --text-color: #e0e0e0;
+  --primary-color: #e89b9b;
+  --secondary-color: #f0d96e;
+  --accent-color: #8ab8e6;
+  --border-color: #404040;
 }
-// [data-theme="light-mode"]{
-//     --bg-color:#ffffff;
-//     --text-color:#313131;
-//     --primary-color: #de342b;
-// }
 
-// [data-theme="dark-mode"]{
-//     --bg-color:#3b3b3b;
-//     --text-color:#cecece;
-//     --primary-color: #b1312a;
-// }
+/* Typography Variables */
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+/* Spacing Variables */
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+
+/* Breakpoints */
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
