@@ -13,7 +13,7 @@ title: Home
         </p>
         <div class="hero-cta">
             <a href="#featured-projects" class="btn btn-primary">View My Work</a>
-            <a href="/about" class="btn btn-secondary">Learn About Me</a>
+            <a href="{{/about | relative_url }}" class="btn btn-secondary">Learn About Me</a>
         </div>
     </div>
 </section>
